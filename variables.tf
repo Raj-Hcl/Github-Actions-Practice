@@ -1,18 +1,18 @@
 variable "project_id" {
-type = string
+  type = string
 }
 variable "region" {
-typr = string
+  type = string
 }
 variable "zone" {
-typr = string
+  type = string
 }
 variable "credentials_json" {
-typr = string
+  type = string
 }
 variable "machine_type" {
-typr = string
+  type = string
 }
 variable "image" {
-type = string
+  type = string
 }
