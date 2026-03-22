@@ -1,6 +1,18 @@
-variable "project_id" {}
-variable "region" {}
-variable "zone" {}
-variable "credentials_json" {}
-variable "machine_type" {}
-variable "image" {}
+variable "project_id" {
+type = string
+}
+variable "region" {
+typr = string
+}
+variable "zone" {
+typr = string
+}
+variable "credentials_json" {
+typr = string
+}
+variable "machine_type" {
+typr = string
+}
+variable "image" {
+type = string
+}
