@@ -1,6 +1,9 @@
 name: Terraform GCP VM
 
 on:
+  push:
+    branches: 
+      main
   workflow_dispatch:   # Manual trigger
 
 jobs:
