@@ -1,10 +1,3 @@
-provider "google" {
-  project     = var.project_id
-  region      = var.region
-  zone        = var.zone
-  credentials = var.credentials_json
-}
-
 resource "google_compute_instance" "default" {
   name         = "my-vm"
   machine_type = var.machine_type
