@@ -7,9 +7,6 @@ variable "region" {
 variable "zone" {
   type = string
 }
-variable "credentials_json" {
-  type = string
-}
 variable "machine_type" {
   type = string
 }
