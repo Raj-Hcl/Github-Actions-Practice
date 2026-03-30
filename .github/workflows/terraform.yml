@@ -56,26 +56,5 @@ jobs:
       - name: Terraform Apply
         run: terraform apply -auto-approve
         
-  destroy: 
-    name: Terraform Destroy
-    runs-on: ubuntu-latest
-
-    needs: apply
-
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-
-      - name: Authenticate to GCP
-        uses: google-github-actions/auth@v2
-        with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }}
-
-      - name: Terraform Init
-        run: terraform init
-
       - name: Terraform Destroy
-        run: terraform destroy
+        run: terraform destroy -auto-approve
