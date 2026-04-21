@@ -13,4 +13,4 @@ resource "google_compute_instance" "default" {
     network = "default"
     access_config {}
   }
-}
+}#
